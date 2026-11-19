@@ -1,4 +1,4 @@
-const mongoose=require("mongoose");
+const mongoose = require("mongoose");
 const bookSchema = new mongoose.Schema({
     title: {
         type: String,
@@ -7,11 +7,13 @@ const bookSchema = new mongoose.Schema({
     },
     author: {
         type: String,
-        required: true
+        required: true,
+        trim: true
     },
     category: {
         type: String,
-        required: true
+        required: true,
+        trim: true
     },
     available: {
         type: Boolean,
